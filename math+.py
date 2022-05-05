@@ -11,13 +11,6 @@ def is_number(str: str):
     except:
         return False
 
-def list_count(list: list) -> int:
-    if isinstance(list, (tuple, list)):
-        return sum(list_count(element) for element in list)
-    elif isinstance(list, (int, float)):
-        return 1
-    return 0
-
 def exponent(n, exponent=2, do_round=True):
     if do_round: return round(n ** exponent)
     else: return n ** exponent
