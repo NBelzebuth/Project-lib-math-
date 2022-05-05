@@ -11,6 +11,13 @@ def is_number(str: str):
     except:
         return False
 
+def list_count(list: list) -> int:
+    if isinstance(list, (tuple, list)):
+        return sum(list_count(element) for element in list)
+    elif isinstance(list, (int, float)):
+        return 1
+    return 0
+
 def exponent(n, exponent=2, do_round=True):
     if do_round: return round(n ** exponent)
     else: return n ** exponent
@@ -43,3 +50,11 @@ def is_not_prime(n):
 
 def pyth(l1, l2, do_round=True):
     return square_root(square(l1, do_round) + square(l2, do_round), do_round)
+
+def get_percentage(total=100, nb=100, do_round=False):
+    if do_round: return round((100*nb)/total)
+    else: return (100*nb)/total
+
+def percentage(percentage=100, total=100, do_round=False):
+    if do_round: return round()
+    else: return (percentage*total)/100
