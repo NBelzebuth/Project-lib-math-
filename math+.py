@@ -1,4 +1,10 @@
-def try_int(str: str, convert=False):
+print("""Math+ by Belz. (version 1.7.9, python 3.8 minimum)
+Thanks for the support ! Final version is almost there :)
+""")
+
+def xor(x:bool, y:bool):
+    return not x==y
+def try_int(str: str):
     try:
         return int(str)
     except:
