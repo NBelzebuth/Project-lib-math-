@@ -4,6 +4,7 @@ Thanks for the support ! Final version is almost there :)
 def help(function='all'):
     if function=="all":
         print("""Math+ by Belz. (version 1.7.9, python 3.8 minimum)
+
 Math+ implement a lot of usefull function like:
 XOR : xor(x,y) if x=True, y=False -> OUT=True, if x=True, y=False -> OUT=False
 TRY INT: try_int(string) if string = "15" -> return 15 if string = "Hello" -> return False
@@ -43,18 +44,18 @@ IN DEV : (
 Function : Function permet de faire tout les calculs de fonctions
 CRYPT : crypt(string, key, caracters, alphabet) :
     by default: caracters="&=(£é_ç$)+}", alphabet="abcdefghijklmnopqrstuvwxyz1234567890,' " (shouldn't be changed)
-    IF string = "Hello, World" -> return ==<<<$é=====é£ç£)((=é=$==£!>>> 0xe916df45c6
+    IF string = "Hello, World!" -> return "==<<<&$&é=====é£çé(((=é=$==&££+>>>"
 DECRYPT : decrypt(string, key, caracters, alphabet):
     by default: caracters="&=(£é_ç$)+}", alphabet="abcdefghijklmnopqrstuvwxyz1234567890,' " (shouldn't be changed)
-    IF string = ==<<<$é=====é£ç£)((=é=$==£!>>> 0xe916df45c6 -> return "Hello, World"
+    IF string = "==<<<&$&é=====é£çé(((=é=$==&££+>>>" -> return "hello, world!"
 )
     
 help(function name) for more details
 CONTACT ME ON DISCORD : 𝕭𝖊𝖑𝖟𝖊𝖇𝖚𝖙𝖍#7378
 """)
-"""if __name__ == "__main__":
+if __name__ == "__main__":
     help()
-    exit()"""
+    exit()
 
 def xor(x:bool, y:bool):
     return not x==y
