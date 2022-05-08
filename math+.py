@@ -35,7 +35,7 @@ PYTHAGORE : pyth(l1, l2, do_round) pythagore theorem
 PERCENTAGE : return value by the percentage percentage(percentage, total, do_round) :
  -- if percentage = 50, total = 30 -> return 15
  -- if percentage = 50, total = 30, do_round = True -> return 15
--- if percentage = 50, total = 30, do_round = False -> return 15.0
+ -- if percentage = 50, total = 30, do_round = False -> return 15.0
 GET PERCENTAGE : return value by the percentage percentage(total, nb, do_round) :
  -- if nb = 15, total = 30 -> return 50
  -- if nb = 15, total = 30, do_round = True -> return 50
